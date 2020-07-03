@@ -1,0 +1,8 @@
+# Certificado #
+*.csr
+*.key
+*.crt 
+
+# Pasta #
+.certificados 
+

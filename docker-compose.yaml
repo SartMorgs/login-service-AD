@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    # Login Web App
+    web:
+        build: .
+        command: go run main.go 
+        volumes:
+            - .:/code
+        ports:
+            - 8000:8000
+        depends_on:
+            - db
+
+networks:
+    mongo-compose-network:
+        driver: bridge
